@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpViewController: UIViewController {
 
@@ -21,14 +22,42 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func onSignUpButton(_ sender: Any) {
-        
-        if (passwordField.text == passwordConfimationField.text){
-            print("lets sign up")
+        if (usernameField != nil && passwordConfimationField != nil && passwordField != nil){
+            print("move on 1")
+            
+            if (passwordField.text == passwordConfimationField.text){
+                print("lets sign up")
+                
+//               Step 1:
+                var user = PFUser()
+                user.username = usernameField.text
+                user.password = passwordField.text
+//               Step 2:
+                user.signUpInBackground { (Success, Error) in
+                    if (Success){
+                        self.performSegue(withIdentifier: "onSignUp", sender: self)
+                    }
+                }
+                
+                
+                
+                
+                
+                
+            }else{
+                print("Passwords do not match")
+            }
         }else{
-            print("Passwords do not match")
+            print("stop")
         }
+        
+        
     }
     
  
 
 }
+
+
+//Parse documentaion
+//https://docs.parseplatform.org/ios/guide/#signing-up
