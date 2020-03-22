@@ -55,3 +55,7 @@ class SignUpViewController: UIViewController {
 //https://docs.parseplatform.org/ios/guide/#signing-up
 
 //parse-dashboard --appId 100DayChallenge --masterKey myMasterKey --serverURL "http://challenge100days.herokuapp.com/parse
+
+//
+//git remote add origin https://github.com/EatMoreOranges/100-Day-Challenge-App.git
+//git push -u origin master

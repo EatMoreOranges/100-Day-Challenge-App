@@ -47,7 +47,7 @@
 		C4528326CEC40E81A3A5DEA3 /* Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-50 Day Challenge-50 Day ChallengeUITests/Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CBE732224F7D531500D3DD30 /* Pods-50 Day Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-50 Day Challenge.release.xcconfig"; path = "Target Support Files/Pods-50 Day Challenge/Pods-50 Day Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		D14F4AD824272B4D006CE78B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D14F8D462426E8AF00F95BEC /* 50 Day Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "50 Day Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14F8D462426E8AF00F95BEC /* 100 Day Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100 Day Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14F8D492426E8AF00F95BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D14F8D502426E8AF00F95BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		D14F8D472426E8AF00F95BEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D14F8D462426E8AF00F95BEC /* 50 Day Challenge.app */,
+				D14F8D462426E8AF00F95BEC /* 100 Day Challenge.app */,
 				D14F8D5C2426E8B300F95BEC /* 50 Day ChallengeTests.xctest */,
 				D14F8D672426E8B300F95BEC /* 50 Day ChallengeUITests.xctest */,
 			);
@@ -190,7 +190,7 @@
 			);
 			name = "50 Day Challenge";
 			productName = "50 Day Challenge";
-			productReference = D14F8D462426E8AF00F95BEC /* 50 Day Challenge.app */;
+			productReference = D14F8D462426E8AF00F95BEC /* 100 Day Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D14F8D5B2426E8B300F95BEC /* 50 Day ChallengeTests */ = {
@@ -595,7 +595,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EatMoreOranges.-0-Day-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "100 Day Challenge";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -614,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EatMoreOranges.-0-Day-Challenge";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "100 Day Challenge";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
