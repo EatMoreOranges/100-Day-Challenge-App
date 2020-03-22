@@ -36,28 +36,22 @@ class SignUpViewController: UIViewController {
                 user.signUpInBackground { (Success, Error) in
                     if (Success){
                         self.performSegue(withIdentifier: "onSignUp", sender: self)
+                        
                     }
+                    
                 }
                 
-                
-                
-                
-                
-                
-            }else{
-                print("Passwords do not match")
-            }
-        }else{
-            print("stop")
-        }
-        
-        
+            }else{print("Passwords do not match")}
+        }else{print("stop")}
     }
     
  
-
+   
+    
 }
 
 
 //Parse documentaion
 //https://docs.parseplatform.org/ios/guide/#signing-up
+
+//parse-dashboard --appId 100DayChallenge --masterKey myMasterKey --serverURL "http://challenge100days.herokuapp.com/parse

@@ -22,7 +22,7 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="onSignUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nmQ-i8-cPZ"/>
-                                    <segue destination="XGz-8r-dn7" kind="presentation" identifier="onSignUp" modalPresentationStyle="fullScreen" id="6mw-fV-mby"/>
+                                    <segue destination="XGz-8r-dn7" kind="presentation" identifier="onSignUp" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6mw-fV-mby"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="challenge_500px" translatesAutoresizingMaskIntoConstraints="NO" id="tYj-yU-NcR">
@@ -52,6 +52,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="qby-Jm-WHG" kind="presentation" identifier="toLoginPage" modalPresentationStyle="fullScreen" id="uZu-Pu-ljF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -65,12 +68,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="63.616071428571423"/>
+            <point key="canvasLocation" x="-52" y="64"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WrX-xe-gA3">
             <objects>
-                <viewController title="Login View Controller" id="qby-Jm-WHG" customClass="ViewController" customModule="_0_Day_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login View Controller" id="qby-Jm-WHG" customClass="LoginViewController" customModule="_0_Day_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CvM-Up-q4f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,21 +99,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLoginButton:" destination="qby-Jm-WHG" eventType="touchUpInside" id="6ft-91-MBa"/>
+                                    <segue destination="XGz-8r-dn7" kind="presentation" identifier="onLogin" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Hmn-Pp-gBo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yz-f6-BdT">
                                 <rect key="frame" x="29" y="806" width="96" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignUpPage" modalPresentationStyle="fullScreen" id="rwT-rE-Ql2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gkz-W9-bB9"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="Mqj-KQ-Xgb" id="0xU-3v-k2m"/>
+                        <outlet property="usernameField" destination="INr-95-zEo" id="StZ-kj-MJR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l13-ll-fKY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="64"/>
+            <point key="canvasLocation" x="1151" y="64"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9bZ-cy-5h2">
@@ -122,11 +136,15 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="iND-Dx-ft7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h1x-bo-b2g"/>
+                    <navigationItem key="navigationItem" id="h1x-bo-b2g">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="un1-mB-qmu">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCV-N1-jQL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="759"/>
+            <point key="canvasLocation" x="1151" y="828"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hIE-jd-4HY">
@@ -144,10 +162,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2x-Wo-qbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="759"/>
+            <point key="canvasLocation" x="-52" y="828"/>
         </scene>
     </scenes>
     <resources>
         <image name="challenge_500px" width="500" height="500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6mw-fV-mby"/>
+    </inferredMetricsTieBreakers>
 </document>
