@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		D14F8D4A2426E8AF00F95BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D492426E8AF00F95BEC /* AppDelegate.swift */; };
 		D14F8D4C2426E8AF00F95BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */; };
-		D14F8D4E2426E8AF00F95BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D4D2426E8AF00F95BEC /* ViewController.swift */; };
 		D14F8D512426E8AF00F95BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14F8D4F2426E8AF00F95BEC /* Main.storyboard */; };
 		D14F8D532426E8B300F95BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14F8D522426E8B300F95BEC /* Assets.xcassets */; };
 		D14F8D562426E8B300F95BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14F8D542426E8B300F95BEC /* LaunchScreen.storyboard */; };
 		D14F8D612426E8B300F95BEC /* _0_Day_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D602426E8B300F95BEC /* _0_Day_ChallengeTests.swift */; };
 		D14F8D6C2426E8B300F95BEC /* _0_Day_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D6B2426E8B300F95BEC /* _0_Day_ChallengeUITests.swift */; };
+		D14F8D7E2426ED1D00F95BEC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D7D2426ED1D00F95BEC /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		D14F8D462426E8AF00F95BEC /* 50 Day Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "50 Day Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14F8D492426E8AF00F95BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D14F8D4D2426E8AF00F95BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D14F8D502426E8AF00F95BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D14F8D522426E8B300F95BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14F8D552426E8B300F95BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		D14F8D672426E8B300F95BEC /* 50 Day ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "50 Day ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14F8D6B2426E8B300F95BEC /* _0_Day_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0_Day_ChallengeUITests.swift; sourceTree = "<group>"; };
 		D14F8D6D2426E8B300F95BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14F8D7D2426ED1D00F95BEC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				D14F8D492426E8AF00F95BEC /* AppDelegate.swift */,
 				D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */,
-				D14F8D4D2426E8AF00F95BEC /* ViewController.swift */,
 				D14F8D4F2426E8AF00F95BEC /* Main.storyboard */,
 				D14F8D522426E8B300F95BEC /* Assets.xcassets */,
 				D14F8D542426E8B300F95BEC /* LaunchScreen.storyboard */,
 				D14F8D572426E8B300F95BEC /* Info.plist */,
+				D14F8D7D2426ED1D00F95BEC /* SignUpViewController.swift */,
 			);
 			path = "50 Day Challenge";
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D14F8D4E2426E8AF00F95BEC /* ViewController.swift in Sources */,
 				D14F8D4A2426E8AF00F95BEC /* AppDelegate.swift in Sources */,
+				D14F8D7E2426ED1D00F95BEC /* SignUpViewController.swift in Sources */,
 				D14F8D4C2426E8AF00F95BEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
