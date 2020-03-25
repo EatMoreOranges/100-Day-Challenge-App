@@ -11,6 +11,7 @@
 		9AF60E0E8A62A76507845B88 /* Pods_50_Day_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF37C5750651990D06F07B83 /* Pods_50_Day_ChallengeTests.framework */; };
 		B2073759A8C29175EC0072CB /* Pods_50_Day_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE63040F00CCB1993D3609 /* Pods_50_Day_Challenge.framework */; };
 		D14F4AD924272B4D006CE78B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F4AD824272B4D006CE78B /* LoginViewController.swift */; };
+		D14F4B17242AAEE5006CE78B /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F4B16242AAEE5006CE78B /* ChallengeViewController.swift */; };
 		D14F8D4A2426E8AF00F95BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D492426E8AF00F95BEC /* AppDelegate.swift */; };
 		D14F8D4C2426E8AF00F95BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */; };
 		D14F8D512426E8AF00F95BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14F8D4F2426E8AF00F95BEC /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		C4528326CEC40E81A3A5DEA3 /* Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-50 Day Challenge-50 Day ChallengeUITests/Pods-50 Day Challenge-50 Day ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CBE732224F7D531500D3DD30 /* Pods-50 Day Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-50 Day Challenge.release.xcconfig"; path = "Target Support Files/Pods-50 Day Challenge/Pods-50 Day Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		D14F4AD824272B4D006CE78B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D14F4B16242AAEE5006CE78B /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		D14F8D462426E8AF00F95BEC /* 100 Day Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100 Day Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14F8D492426E8AF00F95BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14F8D4B2426E8AF00F95BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				D14F8D572426E8B300F95BEC /* Info.plist */,
 				D14F8D7D2426ED1D00F95BEC /* SignUpViewController.swift */,
 				D14F4AD824272B4D006CE78B /* LoginViewController.swift */,
+				D14F4B16242AAEE5006CE78B /* ChallengeViewController.swift */,
 			);
 			path = "50 Day Challenge";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14F4AD924272B4D006CE78B /* LoginViewController.swift in Sources */,
+				D14F4B17242AAEE5006CE78B /* ChallengeViewController.swift in Sources */,
 				D14F8D4A2426E8AF00F95BEC /* AppDelegate.swift in Sources */,
 				D14F8D7E2426ED1D00F95BEC /* SignUpViewController.swift in Sources */,
 				D14F8D4C2426E8AF00F95BEC /* SceneDelegate.swift in Sources */,

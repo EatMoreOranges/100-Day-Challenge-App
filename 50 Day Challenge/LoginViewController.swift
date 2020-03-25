@@ -16,38 +16,40 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+//         Check User Default: Is the user already logged in?
+//         If "userLoggedIn" is true (user is logged in) then perform transition
+                if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {self.performSegue(withIdentifier: "onLogin", sender: self)}
+    }
+    
+    
+    //might not be necessary
+//    @IBAction func toSignUp(_ sender: Any) {
+//        self.performSegue(withIdentifier: "toSignUp", sender: self)
+//    }
+    
+    
     
     @IBAction func onLoginButton(_ sender: Any) {
         let username = usernameField.text
         let password = passwordField.text
-        
-
 //
         if (usernameField != nil && passwordField != nil){
-            print("move on 1")
-            
-
-            //        the Parse login line of code was not really the same in documentation
-//            this did not work:
-//            PFUser.logInWithUsername(inBackground: username, password: password){
-//        (user, error) in if user != nil {} else {}}
-            //        this is the correct line of code for loging in
+//          The Parse login line of code was not really the same in documentation
+//          This is the correct line of code for loging in
             PFUser.logInWithUsername(inBackground: "username", password: "password") { (user, error) in
+                
                 if user != nil {
-                        self.performSegue(withIdentifier: "onLogin", sender: nil)
-                    } else {
-                        print("Error:\(error)")
-                }
+                    //everytime a user logs in a variable called "userLoggerIn" is created and set to true
+                    UserDefaults.standard.set(true, forKey: "userLoggedIn")
+                    self.performSegue(withIdentifier: "onLogin", sender: nil)
+                    
+                } else {print("Error:\(error)")}
             }
-        }
-        
-        
-        
+        } else {print("self.passwordField.backgroundColor = UIColor.brown")}
         
     }
     

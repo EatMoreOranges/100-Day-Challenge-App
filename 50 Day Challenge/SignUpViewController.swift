@@ -36,7 +36,6 @@ class SignUpViewController: UIViewController {
                 user.signUpInBackground { (Success, Error) in
                     if (Success){
                         self.performSegue(withIdentifier: "onSignUp", sender: self)
-                        
                     }
                     
                 }
@@ -45,7 +44,10 @@ class SignUpViewController: UIViewController {
         }else{print("stop")}
     }
     
- 
+//    @IBAction func toLogin(_ sender: Any) {
+//        self.performSegue(withIdentifier: "toLogin", sender: self)
+//    }
+//
    
     
 }
