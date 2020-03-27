@@ -34,21 +34,23 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onLoginButton(_ sender: Any) {
-        let username = usernameField.text
-        let password = passwordField.text
+        let username = usernameField.text! //FIND OUT WHAT THIS DOES --- this "!" resolved so many errors (Jesus came through [hands up in praise])
+        let pass = passwordField.text!
 //
         if (usernameField != nil && passwordField != nil){
 //          The Parse login line of code was not really the same in documentation
 //          This is the correct line of code for loging in
-            PFUser.logInWithUsername(inBackground: "username", password: "password") { (user, error) in
-                
+
+            PFUser.logInWithUsername(inBackground: username , password: pass) { (user, error) in
+
                 if user != nil {
                     //everytime a user logs in a variable called "userLoggerIn" is created and set to true
                     UserDefaults.standard.set(true, forKey: "userLoggedIn")
                     self.performSegue(withIdentifier: "onLogin", sender: nil)
-                    
+
                 } else {print("Error:\(error)")}
             }
+            
         } else {print("self.passwordField.backgroundColor = UIColor.brown")}
         
     }

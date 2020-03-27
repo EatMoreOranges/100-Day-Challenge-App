@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qby-Jm-WHG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52.173913043478265" y="63.616071428571423"/>
+            <point key="canvasLocation" x="1064" y="78"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WrX-xe-gA3">
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l13-ll-fKY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="64"/>
+            <point key="canvasLocation" x="-52" y="78"/>
         </scene>
         <!--Challenge View Controller-->
         <scene sceneID="9bZ-cy-5h2">
@@ -207,6 +207,6 @@
         <image name="challenge_500px" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YQy-Hn-17x"/>
+        <segue reference="970-a9-n0J"/>
     </inferredMetricsTieBreakers>
 </document>

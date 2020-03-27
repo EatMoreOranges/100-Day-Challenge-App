@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ChallengeViewController: UIViewController {
 
@@ -18,7 +19,10 @@ class ChallengeViewController: UIViewController {
     
 
     @IBAction func onLogOut(_ sender: Any) {
-        
+        PFUser.logOut() // This makes PFUser.current() become nill
+        if PFUser.current() == nil{
+            UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        }
         
     }
     
